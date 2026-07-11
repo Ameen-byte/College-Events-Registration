@@ -1,4 +1,13 @@
-# Logs
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+.vite/
+.idea/
+npm-debug.log
+yarn-error.log
+coverage/# Logs
 logs
 *.log
 npm-debug.log*
