@@ -1,0 +1,12 @@
+.stats-card {
+  background: #eff6ff;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.stats-card strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #1d4ed8;
+}
