@@ -1,16 +1,35 @@
-# React + Vite
+# College Events Registration
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React + Vite campus events application with a fully functional student registration module built as part of a React state management assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive landing page for college events
+- Interactive registration page with controlled form components
+- State-driven form handling using React useState()
+- Form validation for required fields, email, password strength, mobile number, confirm password, and terms acceptance
+- Success feedback with a cleared form and submitted details summary
 
-## React Compiler
+## Concepts Covered
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React state management with useState()
+- Event handling with onChange, onSubmit, and onClick
+- Controlled components and two-way data binding
+- Form validation and error handling
+- Component-based UI structure with reusable buttons and cards
 
-## Expanding the Oxlint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Install dependencies
+   - npm install
+2. Start the development server
+   - npm run dev
+3. Build for production
+   - npm run build
+
+## Project Structure
+
+- src/pages/Home.jsx – landing page experience
+- src/pages/Registration.jsx – registration form and validation logic
+- src/styles/Registration.css – form styling
+- src/components – reusable UI elements

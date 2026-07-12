@@ -19,11 +19,10 @@ const eventCards = [
   { title: 'Sports Meet', description: 'Compete and cheer with your team.', badge: 'Trending' },
 ]
 
-function Home() {
+function Home({ onRegister }) {
   return (
     <div className="app-shell">
       <Navbar brand="College Events Registration" links={navLinks} />
-
       <div className="content-layout">
         <Sidebar items={sidebarItems} />
 
@@ -33,7 +32,7 @@ function Home() {
               <h1>Register for campus events easily</h1>
               <p>Discover upcoming activities and join the events you love.</p>
               <div className="hero-buttons">
-                <Button label="Register Now" variant="primary" />
+                <Button label="Register Now" variant="primary" onClick={onRegister} />
                 <Button label="View Events" variant="secondary" />
               </div>
             </div>
