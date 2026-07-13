@@ -1,0 +1,9 @@
+/* App specific styles are minimal because global layout is in index.css */
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}

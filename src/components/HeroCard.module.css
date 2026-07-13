@@ -1,0 +1,25 @@
+.heroCard {
+  border-radius: 24px;
+  padding: 28px;
+  background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);
+  color: #fff;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.14);
+}
+
+.heroCard h2 {
+  margin: 0 0 12px;
+}
+
+.heroCard p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.badge {
+  display: inline-flex;
+  margin-top: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 0.9rem;
+}

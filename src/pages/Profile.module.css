@@ -1,0 +1,20 @@
+.profilePage {
+  background: #fff;
+  padding: 24px;
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.profilePage dl {
+  display: grid;
+  gap: 12px;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+  color: #475569;
+}

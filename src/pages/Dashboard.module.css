@@ -1,0 +1,35 @@
+.dashboardPage {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+}
+
+.eventCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+@media (max-width: 900px) {
+  .dashboardPage {
+    grid-template-columns: 1fr;
+  }
+}

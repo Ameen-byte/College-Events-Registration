@@ -1,0 +1,47 @@
+.loginPage {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.card {
+  width: min(560px, 100%);
+  background: #fff;
+  padding: 32px;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  margin: 0 0 24px;
+}
+
+.toggleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.forgotButton {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.success {
+  color: #166534;
+}
+
+.error {
+  color: #dc2626;
+}
