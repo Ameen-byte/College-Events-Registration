@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# College Events Registration
 
 A React + Vite web app for managing student registrations and college event dashboards.
@@ -61,3 +62,6 @@ Props are read-only values passed from parent components to children. They make 
 ## Screenshots
 
 Add screenshots of Home, Register, Login, Dashboard, and 404 pages here after running the app.
+=======
+# College-Events-Registration
+>>>>>>> 11e4c9ffbabf750c94fc7e1de3775fbfe9efd6f6
