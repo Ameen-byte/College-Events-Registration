@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NavLink } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
@@ -24,7 +25,26 @@ export default function Navbar() {
             {item.label}
           </NavLink>
         ))}
+=======
+import '../styles/Navbar.css'
+
+function Navbar({ brand, links }) {
+  return (
+    <header className="navbar">
+      <div className="brand">{brand}</div>
+      <nav>
+        <ul className="nav-links">
+          {links.map((link) => (
+            <li key={link}>{link}</li>
+          ))}
+        </ul>
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300
       </nav>
     </header>
   )
 }
+<<<<<<< HEAD
+=======
+
+export default Navbar
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300

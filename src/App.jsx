@@ -1,4 +1,5 @@
 import { useState } from 'react'
+<<<<<<< HEAD
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
@@ -65,3 +66,20 @@ export default function App() {
     </Routes>
   )
 }
+=======
+import Home from './pages/Home'
+import Registration from './pages/Registration'
+import './App.css'
+
+function App() {
+  const [view, setView] = useState('home')
+
+  return view === 'register' ? (
+    <Registration onBack={() => setView('home')} />
+  ) : (
+    <Home onRegister={() => setView('register')} />
+  )
+}
+
+export default App
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* App specific styles are minimal because global layout is in index.css */
 
 body {
@@ -6,4 +7,67 @@ body {
 
 #root {
   min-height: 100vh;
+=======
+.app-shell {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.content-layout {
+  display: flex;
+  min-height: calc(100vh - 180px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.4rem;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-section h1 {
+  margin: 0 0 0.5rem;
+  color: #0f172a;
+}
+
+.hero-section p {
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.stats-grid,
+.cards-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cards-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .content-layout {
+    flex-direction: column;
+  }
+
+  .stats-grid,
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NavLink } from 'react-router-dom'
 import styles from './Sidebar.module.css'
 
@@ -28,3 +29,21 @@ export default function Sidebar() {
     </aside>
   )
 }
+=======
+import '../styles/Sidebar.css'
+
+function Sidebar({ items }) {
+  return (
+    <aside className="sidebar">
+      <h3>Quick Access</h3>
+      <ul>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </aside>
+  )
+}
+
+export default Sidebar
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300

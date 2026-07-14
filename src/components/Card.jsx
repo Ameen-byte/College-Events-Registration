@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styles from './Card.module.css'
 
 export default function Card({ title, value, children }) {
@@ -11,3 +12,18 @@ export default function Card({ title, value, children }) {
     </article>
   )
 }
+=======
+import '../styles/Card.css'
+
+function Card({ title, description, badge }) {
+  return (
+    <article className="card">
+      <span className="badge">{badge}</span>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </article>
+  )
+}
+
+export default Card
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300

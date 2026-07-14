@@ -1,13 +1,26 @@
 :root {
+<<<<<<< HEAD
   color: #0f172a;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: #eef2ff;
+=======
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300
 }
 
 * {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 html,
 body,
 #root {
@@ -38,4 +51,14 @@ select {
 
 button {
   font: inherit;
+=======
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8fafc;
+}
+
+#root {
+  min-height: 100vh;
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300
 }

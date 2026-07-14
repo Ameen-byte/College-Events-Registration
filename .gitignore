@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 # Logs
+=======
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+.vite/
+.idea/
+npm-debug.log
+yarn-error.log
+coverage/# Logs
+>>>>>>> 3c0d9399f623008b350110f82fcc13138a690300
 logs
 *.log
 npm-debug.log*
