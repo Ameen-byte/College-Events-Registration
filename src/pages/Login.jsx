@@ -23,17 +23,20 @@ export default function Login({ students, setCurrentUser, setIsAuthenticated }) 
 
     setTimeout(() => {
       setLoading(false)
+      const lookupValue = form.email.trim().toLowerCase()
       const matchedUser = students.find(
-        (student) => student.email === form.email && student.password === form.password,
+        (student) =>
+          (student.email === lookupValue || student.username === lookupValue) &&
+          student.password === form.password,
       )
 
       if (matchedUser) {
-        setMessage({ type: 'success', text: 'Login successful! Redirecting to home…' })
+        setMessage({ type: 'success', text: 'Login successful! Redirecting to dashboard…' })
         setCurrentUser(matchedUser)
         setIsAuthenticated(true)
-        setTimeout(() => navigate('/'), 600)
+        setTimeout(() => navigate('/dashboard'), 600)
       } else {
-        setMessage({ type: 'error', text: 'Invalid email or password.' })
+        setMessage({ type: 'error', text: 'Invalid email, username, or password.' })
       }
     }, 2000)
   }
@@ -49,12 +52,12 @@ export default function Login({ students, setCurrentUser, setIsAuthenticated }) 
         <h2>Login</h2>
         <form onSubmit={handleSubmit} noValidate>
           <InputField
-            label="Email"
+            label="Email or Username"
             name="email"
-            type="email"
+            type="text"
             value={form.email}
             onChange={handleChange}
-            placeholder="student@example.com"
+            placeholder="student@example.com or jane_doe"
           />
           <InputField
             label="Password"

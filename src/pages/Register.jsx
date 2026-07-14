@@ -62,8 +62,11 @@ export default function Register({ setStudents }) {
     setSuccess('')
     if (!validate()) return
 
+    const username = form.fullName.trim().toLowerCase().replace(/\s+/g, '_')
+
     const newStudent = {
       id: `${Date.now()}`,
+      username,
       ...form,
     }
 
