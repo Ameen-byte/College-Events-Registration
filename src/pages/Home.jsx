@@ -8,7 +8,7 @@ import Sidebar from '../components/Sidebar.jsx'
 const stats = [
   { title: 'Events', value: '12' },
   { title: 'Registrations', value: '480' },
-  { title: 'Colleges', value: '16' },1  
+  { title: 'Colleges', value: '16' },
 ]
 
 export default function Home() {
@@ -123,5 +123,3 @@ export default function Home() {
     </div>
   )
 }
-
-
