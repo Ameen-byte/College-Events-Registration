@@ -6,7 +6,7 @@ export default function NotFound() {
     <section className={styles.notFoundPage}>
       <div className={styles.card}>
         <h2>404 - Page Not Found</h2>
-        <p>Sorry, the page you are looking for does not exist.</p>
+        <p>The path you requested could not be found. Please return to the home page and try again.</p>
         <Link to="/">Return to Home</Link>
       </div>
     </section>

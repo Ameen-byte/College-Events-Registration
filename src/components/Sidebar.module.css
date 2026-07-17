@@ -27,3 +27,13 @@
 .active {
   background: #e2e8f0;
 }
+
+.logoutButton {
+  margin-top: 8px;
+  border: none;
+  background: #dc2626;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+}

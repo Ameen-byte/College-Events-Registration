@@ -3,9 +3,9 @@ import styles from './Navbar.module.css'
 
 const navItems = [
   { label: 'Home', path: '/' },
+  { label: 'Dashboard', path: '/dashboard' },
   { label: 'Register', path: '/register' },
   { label: 'Login', path: '/login' },
-  { label: 'Dashboard', path: '/dashboard' },
 ]
 
 export default function Navbar() {
