@@ -1,0 +1,34 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.field label {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.field input,
+.field textarea,
+.field select {
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font: inherit;
+}
+
+.field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.invalid {
+  border-color: #dc2626;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+}

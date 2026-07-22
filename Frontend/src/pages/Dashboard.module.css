@@ -1,0 +1,140 @@
+.dashboardPage {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subText {
+  margin: 4px 0 0;
+  color: #64748b;
+}
+
+.heroCard,
+.registrationPanel,
+.registrationList,
+.eventSection {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+.collegeGrid,
+.eventGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.collegeGrid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.eventGrid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.collegeCard,
+.eventCard {
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  display: grid;
+  gap: 6px;
+}
+
+.collegeCard h4,
+.eventCard h4,
+.registrationPanel h3,
+.registrationList h3,
+.heroCard h3 {
+  margin: 0;
+}
+
+.collegeCard p,
+.eventCard p,
+.registrationPanel p,
+.registrationList p,
+.heroCard p {
+  margin: 0;
+  color: #475569;
+}
+
+.activeCollege,
+.activeEvent {
+  border-color: #2563eb;
+  background: #dbeafe;
+}
+
+.sectionHeader,
+.registrationHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+
+.success {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.registrationList ul {
+  display: grid;
+  gap: 10px;
+  padding-left: 18px;
+}
+
+@media (max-width: 900px) {
+  .dashboardPage {
+    grid-template-columns: 1fr;
+  }
+}

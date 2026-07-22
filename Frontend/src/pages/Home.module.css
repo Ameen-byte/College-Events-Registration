@@ -1,0 +1,94 @@
+.homePage {
+  display: grid;
+  gap: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.eventsSection {
+  display: grid;
+  gap: 16px;
+  background: #f8fafa;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sectionHeader h3 {
+  margin: 0 0 4px;
+}
+
+.sectionHeader p {
+  margin: 0;
+  color: #64748b;
+}
+
+.refreshButton {
+  border: none;
+  background: #3e537b;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 10px 12px;
+  min-width: 220px;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.eventCard {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.eventCard h4 {
+  margin: 0;
+}
+
+.eventCard p {
+  margin: 0;
+  color: #475569;
+}
+
+.viewLink {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.statusCard {
+  background: #eff6ff;
+  padding: 16px;
+  border-radius: 16px;
+  color: #1d4ed8;
+}
