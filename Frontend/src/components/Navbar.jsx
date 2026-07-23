@@ -37,10 +37,10 @@ export default function Navbar() {
         ))}
       </nav>
 
-      {/* Logout Button */}
+      {/* Logout Button
       <button className={styles.logoutBtn}>
         Logout
-      </button>
+      </button> */}
     </header>
   );
 }

@@ -49,3 +49,18 @@
 .error {
   color: #dc2626;
 }
+
+.priceNotice {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.priceNotice span {
+  color: #64748b;
+  font-size: 0.9rem;
+}

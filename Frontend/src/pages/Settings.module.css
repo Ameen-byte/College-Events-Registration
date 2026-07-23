@@ -4,3 +4,56 @@
   border-radius: 22px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
 }
+
+.settingsPage h1,
+.settingsPage > p {
+  margin-top: 0;
+}
+
+.eyebrow {
+  margin-bottom: 6px !important;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intro {
+  color: #64748b;
+}
+
+.settingsList {
+  display: grid;
+  margin-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.settingRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.settingRow span {
+  display: grid;
+  gap: 5px;
+}
+
+.settingRow small {
+  color: #64748b;
+}
+
+.settingRow input {
+  width: 18px;
+  accent-color: #2563eb;
+}
+
+.saved {
+  margin-top: 20px !important;
+  color: #15803d;
+  font-size: 0.9rem;
+}

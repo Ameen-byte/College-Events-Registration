@@ -3,6 +3,126 @@
   gap: 24px;
 }
 
+.pageHeader h1,
+.pageHeader p {
+  margin: 0;
+}
+
+.pageHeader p:last-child {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.metricGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.metricHint {
+  display: block;
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.registrationPanel {
+  padding: 22px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+.panelHeader,
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.panelHeader h2,
+.panelHeader p {
+  margin: 0;
+}
+
+.panelHeader > div > p:last-child {
+  margin-top: 5px;
+  color: #64748b;
+}
+
+.priceBox {
+  min-width: 150px;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px;
+  background: #eff6ff;
+  border-radius: 12px;
+  color: #1d4ed8;
+}
+
+.priceBox strong {
+  font-size: 1.5rem;
+}
+
+.priceBox del {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.registrationForm {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.registrationForm label {
+  display: grid;
+  gap: 6px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.registrationForm input,
+.registrationForm select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+}
+
+.registrationForm label:first-child,
+.formAction {
+  grid-column: 1 / -1;
+}
+
+.formAction {
+  margin-top: 4px;
+}
+
+.success {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
 .searchBar {
   display: flex;
   flex-direction: column;
@@ -59,4 +179,31 @@ td {
   color: #2563eb;
   text-decoration: none;
   font-weight: 600;
+}
+
+.paid {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.pending {
+  color: #b45309;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .metricGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .panelHeader,
+  .registrationForm {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .registrationForm label:first-child,
+  .formAction {
+    grid-column: auto;
+  }
 }

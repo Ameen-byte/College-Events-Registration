@@ -1,0 +1,237 @@
+.eventsPage {
+  display: grid;
+  gap: 24px;
+}
+
+.pageHeader,
+.collegeHeader,
+.registrationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.pageHeader h1,
+.pageHeader p,
+.collegeHeader h2,
+.collegeHeader p,
+.registrationHeader h2,
+.registrationHeader p {
+  margin: 0;
+}
+
+.pageHeader p:last-child,
+.collegeHeader p,
+.registrationHeader p:last-child {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.eyebrow {
+  margin: 0 0 6px !important;
+  color: #2563eb !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eventCount {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.collegeList {
+  display: grid;
+  gap: 24px;
+}
+
+.collegeSection,
+.registrationPanel,
+.status {
+  padding: 22px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.eventCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 275px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.activeEvent {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #bfdbfe;
+}
+
+.eventCategory {
+  align-self: flex-start;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.eventCard h3 {
+  margin: 14px 0 7px;
+}
+
+.eventCard > p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+.eventCard dl {
+  display: grid;
+  gap: 7px;
+  margin: 16px 0;
+}
+
+.eventCard dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.eventCard dt {
+  color: #64748b;
+}
+
+.eventCard dd {
+  margin: 0;
+  color: #334155;
+  font-weight: 600;
+  text-align: right;
+}
+
+.priceLine {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin-top: auto;
+  color: #1d4ed8;
+}
+
+.priceLine strong {
+  font-size: 1.2rem;
+}
+
+.priceLine del {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.cardActions a,
+.cardActions button {
+  border: 0;
+  background: none;
+  color: #2563eb;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cardActions button {
+  padding: 8px 11px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+}
+
+.registrationPanel {
+  scroll-margin-top: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.form input,
+.form select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+}
+
+.formAction {
+  grid-column: 1 / -1;
+}
+
+.closeButton {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px 11px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.success {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .pageHeader,
+  .registrationHeader {
+    flex-direction: column;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .formAction {
+    grid-column: auto;
+  }
+}

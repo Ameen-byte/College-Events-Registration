@@ -1,9 +1,11 @@
+
 import { NavLink } from 'react-router-dom'
 import styles from './Sidebar.module.css'
 
 const items = [
-  { label: 'Events', path: '/dashboard' },
+
   { label: 'Overview', path: '/dashboard/overview' },
+  { label: 'Events', path: '/dashboard/events' },
   { label: 'Profile', path: '/dashboard/profile' },
   { label: 'Settings', path: '/dashboard/settings' },
 ]
